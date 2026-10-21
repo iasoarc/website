@@ -18,7 +18,8 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <ThemeSwitcher labels={dictionary.themeSwitcher} />
         <LanguageSwitcher locale={locale} labels={dictionary.languageSwitcher} menuSide="responsive" />
       </aside>
-      <main id="main-content" tabIndex={-1} className="flex min-w-0 flex-1 flex-col items-center gap-10 px-6 pb-10 pt-24 sm:gap-12 sm:px-10 sm:pt-28 lg:px-20 lg:py-20">
+      {/* Preserve the original desktop spacing when adjusting smaller screens. */}
+      <main id="main-content" tabIndex={-1} className="flex min-w-0 flex-1 flex-col items-center gap-10 px-6 pb-10 pt-48 sm:gap-12 sm:px-10 sm:pt-28 lg:gap-0 lg:px-16 lg:py-48">
         <h1 className="sr-only">Iaso Arc</h1>
         <Logo alt={dictionary.home.logoAlt} className="h-auto w-full max-w-[600px] shrink-0 dark:invert" />
         <ExploreSection locale={locale} labels={dictionary.explore} opensInNewTab={dictionary.accessibility.opensInNewTab} />

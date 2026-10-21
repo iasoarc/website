@@ -57,7 +57,8 @@ export default function ExploreSection({ locale, labels, opensInNewTab }: Explor
                 }
             }}
         >
-            <div role="group" aria-label={labels.label} aria-describedby={instructionsId} className="grid min-w-0 grid-cols-2 gap-3 sm:gap-4 lg:col-start-2 lg:row-start-1 lg:flex lg:flex-col lg:items-center lg:gap-8">
+            {/* 44px targets + 36px gaps retain the original 80px desktop row spacing. */}
+            <div role="group" aria-label={labels.label} aria-describedby={instructionsId} className="grid min-w-0 grid-cols-2 gap-3 sm:gap-4 lg:col-start-2 lg:row-start-1 lg:flex lg:flex-col lg:items-center lg:gap-9">
                 <p id={instructionsId} className="sr-only">{labels.instructions}</p>
                 {topicKeys.map(topic => (
                     <button
@@ -65,7 +66,7 @@ export default function ExploreSection({ locale, labels, opensInNewTab }: Explor
                         type="button"
                         aria-pressed={selected === topic}
                         aria-controls={descriptionId}
-                        className="explore-item min-h-11 min-w-0 cursor-pointer rounded-sm px-2 py-2 text-left text-lg font-semibold tracking-tight aria-pressed:underline aria-pressed:decoration-2 aria-pressed:underline-offset-8 min-[360px]:text-xl sm:text-2xl lg:w-fit lg:text-right lg:text-4xl"
+                        className="explore-item min-h-11 min-w-0 cursor-pointer rounded-sm px-2 py-2 text-left text-lg font-semibold tracking-tight aria-pressed:underline aria-pressed:decoration-2 aria-pressed:underline-offset-8 min-[360px]:text-xl sm:text-2xl lg:w-fit lg:p-0 lg:text-right lg:text-4xl"
                         onPointerEnter={(event) => {
                             if (event.pointerType === "mouse") setHovered(topic);
                         }}
