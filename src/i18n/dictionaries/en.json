@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "title": "Hello, Iaso Arc",
+    "description": "Exploring intelligent systems through research, engineering, and experimentation."
+  },
+  "accessibility": {
+    "skipToContent": "Skip to main content",
+    "opensInNewTab": "opens in a new tab"
+  },
+  "home": {
+    "preferencesLabel": "Page preferences",
+    "logoAlt": "Iaso Arc Logo"
+  },
+  "explore": {
+    "label": "Explore topics",
+    "instructions": "Hover or focus to preview a topic. Activate it to keep its description. Click an empty area or press Escape to reset. A reset button is also available by keyboard.",
+    "resetLabel": "Reset introduction",
+    "default": {
+      "title": "Exploring intelligent systems through research, engineering, and experimentation.",
+      "description": "Code and public projects are available on",
+      "linkLabel": "GitHub"
+    },
+    "topics": {
+      "research": {
+        "label": "Research",
+        "title": "The process of investigating and analyzing information to gain new knowledge.",
+        "description": "See our research directions",
+        "linkLabel": "here"
+      },
+      "systems": {
+        "label": "Systems",
+        "title": "Groups of interacting components that work together to achieve a common goal.",
+        "description": "Give a try on our",
+        "linkLabel": "demos"
+      },
+      "intelligence": {
+        "label": "Intelligence",
+        "title": "The ability to acquire and apply knowledge and skills.",
+        "description": "Check out our developing skills",
+        "linkLabel": "at this page"
+      },
+      "discovery": {
+        "label": "Discovery",
+        "title": "The process of finding something that was previously unknown.",
+        "description": "Get to know our current academical achievements",
+        "linkLabel": "this way"
+      }
+    }
+  },
+  "themeSwitcher": {
+    "title": "Toggle color theme",
+    "toDark": "Switch to dark mode",
+    "toLight": "Switch to light mode"
+  },
+  "languageSwitcher": {
+    "label": "Languages",
+    "triggerLabel": "Choose language. Current language: {language}",
+    "names": {
+      "en": "English",
+      "zh-CN": "Simplified Chinese"
+    }
+  }
+}

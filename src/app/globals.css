@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  color-scheme: light;
+  --focus: #2563eb;
+}
+
+:root.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  color-scheme: dark;
+  --focus: #60a5fa;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 4px;
+}
+
+main:focus-visible {
+  outline-offset: -4px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 100;
+  transform: translateY(calc(-100% - 2rem));
+  border: 2px solid var(--foreground);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+/* Keep the reset action available without adding a permanent visual control. */
+.keyboard-reset:focus {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 50;
+  width: auto;
+  height: auto;
+  min-height: 2.75rem;
+  max-width: calc(100vw - 3rem);
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  white-space: normal;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  background: var(--background);
+  color: var(--foreground);
+  font-size: 0.875rem;
+}
+
+.explore-item {
+  color: #71717a;
+  transition: color 150ms ease;
+}
+
+:root.dark .explore-item {
+  color: #a1a1aa;
+}
+
+.explore-item:hover,
+.explore-item:focus-visible,
+.explore-item[aria-pressed="true"],
+:root.dark .explore-item:is(:hover, :focus-visible, [aria-pressed="true"]) {
+  color: var(--foreground);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}

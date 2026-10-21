@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "title": "你好，Iaso Arc",
+    "description": "通过研究、工程实践与实验，探索智能系统。"
+  },
+  "accessibility": {
+    "skipToContent": "跳到正文",
+    "opensInNewTab": "在新标签页打开"
+  },
+  "home": {
+    "preferencesLabel": "页面偏好设置",
+    "logoAlt": "Iaso Arc 标志"
+  },
+  "explore": {
+    "label": "探索方向",
+    "instructions": "悬停或用键盘聚焦方向以预览，点击或按回车、空格保留介绍。点击空白处或按 Escape 可恢复默认介绍，键盘也能聚焦恢复按钮。",
+    "resetLabel": "恢复默认介绍",
+    "default": {
+      "title": "通过研究、工程实践与实验，探索智能系统。",
+      "description": "代码与开源项目已发布在",
+      "linkLabel": "GitHub"
+    },
+    "topics": {
+      "research": {
+        "label": "研究",
+        "title": "通过调查与分析信息，获取新的知识。",
+        "description": "探索我们的研究方向与进展。",
+        "linkLabel": "查看详情"
+      },
+      "systems": {
+        "label": "系统",
+        "title": "让相互协作的组件，共同实现一个目标。",
+        "description": "体验我们构建的系统与工具。",
+        "linkLabel": "查看演示"
+      },
+      "intelligence": {
+        "label": "智能",
+        "title": "获取知识和技能，并将其付诸应用的能力。",
+        "description": "了解我们正在开发的智能能力。",
+        "linkLabel": "进入页面"
+      },
+      "discovery": {
+        "label": "发现",
+        "title": "发现此前未知的事物，拓展认知的边界。",
+        "description": "了解我们近期的学术成果。",
+        "linkLabel": "查看成果"
+      }
+    }
+  },
+  "themeSwitcher": {
+    "title": "切换亮色 / 深色",
+    "toDark": "切换到深色模式",
+    "toLight": "切换到亮色模式"
+  },
+  "languageSwitcher": {
+    "label": "语言",
+    "triggerLabel": "选择语言。当前语言：{language}",
+    "names": {
+      "en": "英语",
+      "zh-CN": "简体中文"
+    }
+  }
+}
