@@ -8,7 +8,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex min-h-11 items-center justify-center rounded-sm underline underline-offset-4 transition-colors hover:text-foreground"
             >
-                沪ICP备2026053210号
+                沪ICP备2026053210号-1
                 <span className="sr-only">（在新标签页打开）</span>
             </a>
         </footer>
